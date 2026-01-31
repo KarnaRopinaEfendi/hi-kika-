@@ -92,8 +92,8 @@ document.getElementById("bq").onclick = function() {
   if(jawaban && jawaban.length < 19){
     window.jawaban = jawaban;
     pesanwhatsapp = jawaban;
-    await swals.fire('OK!', 'Kirim jawabannya ke WhatsApp aku, ya!', 'success');
-    window.location = "https://api.whatsapp.com/send?phone=&text=6285814509791" + pesanwhatsapp;
+    await swals.fire('OK!', 'Kirim jawabannya ke WhatsApp aku, ya kik!', 'success');
+    window.location = "https://api.whatsapp.com/send?phone=6285814509791&text=" + pesanwhatsapp;
     tombol();
   } else {
     await swals.fire('Ups!', 'Jawaban tidak boleh kosong atau lebih dari 18 karakter, ya!');jawab();
